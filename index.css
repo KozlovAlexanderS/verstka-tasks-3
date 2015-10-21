@@ -1,0 +1,48 @@
+.picture {
+    width: 100px;
+    height: inherit;
+}
+
+table {
+    margin: auto;
+    width: 1500px;
+    text-align: center;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+td {
+    height: 35px;
+    position: relative;
+    padding: 10px 5px 15px 20px;
+    border-style: solid;
+    border-color: #00FFFF;
+}
+
+thead {
+    background-color: #00FFFF;
+    position: relative;
+}
+
+td:hover::after,
+th:hover::after{
+    background-color: hsl(30, 25%, 88%);
+    content: '';
+    height: 10000px;
+    top: -5000px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+tr:hover {
+    background-color: hsl(30, 25%, 88%);
+}
+
+form {
+    margin: auto;
+    display: table;
+    padding: 15px;
+    border-radius: 5px;
+}
